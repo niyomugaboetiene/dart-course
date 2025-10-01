@@ -31,5 +31,5 @@ void byUsingVar() {
 void typeConversation() {
   int x = int.parse("123"); // from string to int
   double y = double.parse("3.14"); // from string to double
-  String a = 100.toString(); //
+  String a = 100.toString(); // from number number to string
 }
