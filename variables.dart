@@ -1,5 +1,5 @@
 // ~ decraling variable using ints datatype
-void main() {
+void byUsingVariable() {
   String name = "Etiene";
   int age = 15;
   double point = 4.5;
@@ -20,10 +20,16 @@ void main() {
 }
 
 // ? using variable var but it detects its datatype
-// void main() {
-//   var name = "Etiene";
-//   var age = 15;
-//   print("My age is $age and I'm $name");
-// }
+void byUsingVar() {
+  var name = "Etiene";
+  var age = 15;
+  print("My age is $age and I'm $name");
+}
 
 // * Type conversation: some time we need to convert between types
+
+void typeConversation() {
+  int x = int.parse("123"); // from string to int
+  double y = double.parse("3.14"); // from string to double
+  String a = 100.toString(); //
+}
