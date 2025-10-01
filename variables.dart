@@ -16,6 +16,7 @@ void main() {
   print(fruits);
   print(numbers);
   print(capitals);
+  print(capitals["Rwanda"]);
 }
 
 // ? using variable var but it detects its datatype
@@ -24,3 +25,5 @@ void main() {
 //   var age = 15;
 //   print("My age is $age and I'm $name");
 // }
+
+// * Type conversation: some time we need to convert between types
