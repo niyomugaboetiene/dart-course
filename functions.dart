@@ -14,6 +14,10 @@ int add(int a, int b) {
   return a + b;
 }
 
+void userInfo({required String name, int age = 12}) {
+  print("My name is $name and my age is $age");
+}
+
 // * arrow functions
 int square(int a) => a * a;
 
@@ -24,4 +28,5 @@ void main() {
   int result = add(2, 5);
   print("Sum: $result");
   print(square(2));
+  print()
 }
