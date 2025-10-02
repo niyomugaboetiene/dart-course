@@ -135,6 +135,20 @@
 // }
 
 // ? method overriding means child class provides its own implementation of a methood  that ready exists in the parent class
+class Animal {
+  void sound() {
+    print("Animal makes sound");
+  }
+}
+
+class Cat extends Animal {
+  @override
+  void sound() {
+    super.sound(); // Call parent methood  first
+    print("Cat meows");
+  }
+}
+
 void main() {
   // carInfo();
   // CarsInfo();
@@ -142,4 +156,6 @@ void main() {
   // interaction();
   // interact();
   // interactionss();
+  Cat c = Cat();
+  c.sound();
 }
