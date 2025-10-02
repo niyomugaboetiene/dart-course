@@ -21,7 +21,17 @@ void comparison() {
   print(a < b);
 }
 
+void logical() {
+  bool isAdult = true;
+  bool hasTicket = false;
+  print("Logicals");
+  print(isAdult && hasTicket);
+  print(isAdult || hasTicket);
+  print(!isAdult);
+}
+
 void main() {
   arithmetic();
   comparison();
+  logical();
 }
