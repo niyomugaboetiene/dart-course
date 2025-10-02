@@ -9,7 +9,7 @@ class Car {
   }
 }
 
-void main() {
+void carInfo() {
   // create object
   Car myCar = Car();
 
@@ -17,4 +17,27 @@ void main() {
   print(myCar.speed); // access properties
 
   myCar.showCar();
+}
+
+class Cars {
+  String brands = "TOYOTA";
+  int speeds = 10;
+
+  void displayInfo() {
+    print("Car $brands with speed of $speeds km/h");
+  }
+}
+
+void CarsInfo() {
+  Cars mycars = Cars();
+
+  mycars.brands;
+  mycars.speeds;
+
+  mycars.displayInfo();
+}
+
+void main() {
+  carInfo();
+  CarsInfo();
 }
