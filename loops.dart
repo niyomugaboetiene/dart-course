@@ -17,7 +17,7 @@ void whileLoop() {
 
 // * do while loop same as while loop but it runs once even codition is false
 void doWhileLopp() {
-  int a = 1;
+  int a = 10;
   do {
     print("Number $a");
     a++;
