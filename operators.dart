@@ -30,8 +30,20 @@ void logical() {
   print(!isAdult);
 }
 
+void example() {
+  var age = 15;
+  var hasId = false;
+
+  if (age >= 18 && hasId) {
+    print("Enter in the club");
+  } else {
+    print("Not allowed to enter in the club");
+  }
+}
+
 void main() {
   arithmetic();
   comparison();
   logical();
+  example();
 }
