@@ -91,25 +91,47 @@
 //   myBank.viewAmount();
 // }
 
-class Point {
-  int x, y;
-  Point(this.x, this.y);
-  Point.origin() {
-    x = 0;
-    y = 0;
-  }
+// class Point {
+//   int x, y;
+//   Point(this.x, this.y);
+//   Point.origin() {
+//     x = 0;
+//     y = 0;
+//   }
 
-  void show() {
-    print("($x, $y)");
+//   void show() {
+//     print("($x, $y)");
+//   }
+// }
+
+// void interact() {
+//   Point pi = Point(2, 3);
+//   Point p2 = Point.origin();
+
+//   pi.show();
+//   p2.show();
+// }
+
+// * inhertance
+class Animal {
+  String name = "Unkown";
+
+  void eat() {
+    print("$name eating");
   }
 }
 
-void interact() {
-  Point pi = Point(2, 3);
-  Point p2 = Point.origin();
+class Dog extends Animal {
+  void bark() {
+    print("$name Barking");
+  }
+}
 
-  pi.show();
-  p2.show();
+void interactionss() {
+  Dog dog = Dog();
+  dog.name = "Buddy";
+  dog.eat();
+  dog.bark();
 }
 
 void main() {
@@ -117,5 +139,6 @@ void main() {
   // CarsInfo();
   // carsDetails();
   // interaction();
-  interact();
+  // interact();
+  interactionss();
 }
