@@ -113,32 +113,33 @@
 // }
 
 // * inhertance
-class Animal {
-  String name = "Unkown";
+// class Animal {
+//   String name = "Unkown";
 
-  void eat() {
-    print("$name eating");
-  }
-}
+//   void eat() {
+//     print("$name eating");
+//   }
+// }
 
-class Dog extends Animal {
-  void bark() {
-    print("$name Barking");
-  }
-}
+// class Dog extends Animal {
+//   void bark() {
+//     print("$name Barking");
+//   }
+// }
 
-void interactionss() {
-  Dog dog = Dog();
-  dog.name = "Buddy";
-  dog.eat();
-  dog.bark();
-}
+// void interactionss() {
+//   Dog dog = Dog();
+//   dog.name = "Buddy";
+//   dog.eat();
+//   dog.bark();
+// }
 
+// ? method overriding means child class provides its own implementation of a methood  that ready exists in the parent class
 void main() {
   // carInfo();
   // CarsInfo();
   // carsDetails();
   // interaction();
   // interact();
-  interactionss();
+  // interactionss();
 }
