@@ -24,6 +24,15 @@ void doWhileLopp() {
   } while (a <= 5);
 }
 
+// ! real examples
+void sumOfNumbers() {
+  int sum = 0;
+  for (var a = 1; a <= 5; a++) {
+    sum = sum + a;
+  }
+  print("sum: $sum");
+}
+
 void main() {
   forloops();
   whileLoop();
