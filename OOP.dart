@@ -94,6 +94,27 @@ void interaction() {
   myBank.viewAmount();
 }
 
+class Point {
+  int x, y;
+  Point(this.x, this.y);
+  Point.origin() {
+    x = 0;
+    y = 0;
+  }
+
+  void show() {
+    print("($x, $y)");
+  }
+}
+
+void interact() {
+  Point pi = Point(2, 3);
+  Point p2 = Point.origin();
+
+  pi.show();
+  p2.show();
+}
+
 void main() {
   // carInfo();
   // CarsInfo();
