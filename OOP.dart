@@ -57,42 +57,39 @@
 // }
 
 // ? Simple bank project
+// class BankApp {
+//   String name;
+//   int amount;
 
-import 'dart:ffi';
+//   BankApp(this.name, this.amount);
 
-class BankApp {
-  String name;
-  int amount;
+//   void deposit(int amount) {
+//     if (amount > 0) {
+//       this.amount += amount;
+//       print("You deposited successfully");
+//     } else {
+//       print("Please amount must be greater than 0");
+//     }
+//   }
 
-  BankApp(this.name, this.amount);
+//   void withDraw(int amount) {
+//     if (amount <= this.amount) {
+//       this.amount -= amount;
+//       print("You withdrawed successfullly");
+//     }
+//   }
 
-  void deposit(int amount) {
-    if (amount > 0) {
-      this.amount += amount;
-      print("You deposited successfully");
-    } else {
-      print("Please amount must be greater than 0");
-    }
-  }
+//   void viewAmount() {
+//     print("the amount is $amount");
+//   }
+// }
 
-  void withDraw(int amount) {
-    if (amount <= this.amount) {
-      this.amount -= amount;
-      print("You withdrawed successfullly");
-    }
-  }
-
-  void viewAmount() {
-    print("the amount is $amount");
-  }
-}
-
-void interaction() {
-  BankApp myBank = BankApp("Etiene", 200);
-  myBank.deposit(200);
-  myBank.withDraw(200);
-  myBank.viewAmount();
-}
+// void interaction() {
+//   BankApp myBank = BankApp("Etiene", 200);
+//   myBank.deposit(200);
+//   myBank.withDraw(200);
+//   myBank.viewAmount();
+// }
 
 class Point {
   int x, y;
@@ -119,5 +116,6 @@ void main() {
   // carInfo();
   // CarsInfo();
   // carsDetails();
-  interaction();
+  // interaction();
+  interact();
 }
