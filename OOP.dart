@@ -63,7 +63,22 @@ class BankApp {
   int amount;
 
   BankApp(this.name, this.amount);
-  
+
+  void deposit(int amount) {
+    if (amount > 0) {
+      this.amount += amount;
+      print("You deposited successfully");
+    } else {
+      print("Please amount must be greater than 0");
+    }
+  }
+
+  void withDraw(int amount) {
+    if (amount <= this.amount) {
+      this.amount -= amount;
+      print("You withdrawed successfullly");
+    }
+  }
 }
 
 void main() {
