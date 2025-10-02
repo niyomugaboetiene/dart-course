@@ -58,6 +58,8 @@
 
 // ? Simple bank project
 
+import 'dart:ffi';
+
 class BankApp {
   String name;
   int amount;
@@ -79,10 +81,22 @@ class BankApp {
       print("You withdrawed successfullly");
     }
   }
+
+  void viewAmount() {
+    print("the amount is $amount");
+  }
+}
+
+void interaction() {
+  BankApp myBank = BankApp("Etiene", 200);
+  myBank.deposit(200);
+  myBank.withDraw(200);
+  myBank.viewAmount();
 }
 
 void main() {
   // carInfo();
   // CarsInfo();
   // carsDetails();
+  interaction();
 }
