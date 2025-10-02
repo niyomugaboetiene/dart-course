@@ -18,7 +18,6 @@ void ifelseStatement() {
 }
 
 // ! if-else-if-statement
-
 void multipleCondition() {
   var marks = 80;
   if (marks >= 80) {
