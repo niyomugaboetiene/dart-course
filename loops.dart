@@ -37,4 +37,5 @@ void main() {
   forloops();
   whileLoop();
   doWhileLopp();
+  sumOfNumbers();
 }
