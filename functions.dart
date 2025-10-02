@@ -15,10 +15,13 @@ int add(int a, int b) {
 }
 
 // * arrow functions
+int square(int a) => a * a;
+
 void main() {
   sayHello();
   greet("Etiene");
   greet("Etiene", "Welcome back");
   int result = add(2, 5);
   print("Sum: $result");
+  print(square(2));
 }
