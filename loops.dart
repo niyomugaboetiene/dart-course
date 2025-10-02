@@ -6,7 +6,15 @@ void forloops() {
   }
 }
 
+void whileLoop() {
+  int a = 10;
+  while (a >= 5) {
+    print("Number: $a");
+    a++;
+  }
+}
 
 void main() {
   forloops();
+  whileLoop();
 }
