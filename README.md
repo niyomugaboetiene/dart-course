@@ -1,2 +1,2 @@
-# dart-mobile-app
+# dart-course
 this repo contain all needed to know and learn mobile app so far. There we go !!!
