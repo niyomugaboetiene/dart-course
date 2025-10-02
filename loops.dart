@@ -7,8 +7,8 @@ void forloops() {
 }
 
 void whileLoop() {
-  int a = 10;
-  while (a >= 5) {
+  int a = 1;
+  while (a <= 5) {
     print("Number: $a");
     a++;
   }
