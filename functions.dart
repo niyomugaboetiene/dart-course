@@ -28,5 +28,5 @@ void main() {
   int result = add(2, 5);
   print("Sum: $result");
   print(square(2));
-  print()
+  userInfo(name: "Etiene");
 }
