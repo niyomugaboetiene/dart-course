@@ -39,25 +39,35 @@
 
 // * constructor sometimes we need to initialize objects
 
-class Car {
-  String brand;
-  int speed;
+// class Car {
+//   String brand;
+//   int speed;
 
-  // constructor
-  Car(this.brand, this.speed);
+//   // constructor
+//   Car(this.brand, this.speed);
 
-  void showDetails() {
-    print("The brand is $brand and speed $speed km/h");
-  }
-}
+//   void showDetails() {
+//     print("The brand is $brand and speed $speed km/h");
+//   }
+// }
 
-void carsDetails() {
-  Car mycar = Car("TOYOTA", 20);
-  mycar.showDetails();
+// void carsDetails() {
+//   Car mycar = Car("TOYOTA", 20);
+//   mycar.showDetails();
+// }
+
+// ? Simple bank project
+
+class BankApp {
+  String name;
+  int amount;
+
+  BankApp(this.name, this.amount);
+  
 }
 
 void main() {
   // carInfo();
   // CarsInfo();
-  carsDetails();
+  // carsDetails();
 }
