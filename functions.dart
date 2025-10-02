@@ -10,6 +10,7 @@ int add(int a, int b) {
   return a + b;
 }
 
+// * arrow functions
 void main() {
   sayHello();
   greet("Etiene");
