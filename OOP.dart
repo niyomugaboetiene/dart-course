@@ -135,18 +135,50 @@
 // }
 
 // ? method overriding means child class provides its own implementation of a methood  that ready exists in the parent class
-class Animal {
+// class Animal {
+//   void sound() {
+//     print("Animal makes sound");
+//   }
+// }
+
+// class Cat extends Animal {
+//   @override
+//   void sound() {
+//     super.sound(); // Call parent methood  first
+//     print("Cat meows");
+//   }
+// }
+
+// ~ Abstraction  is class that can not be accessed directly
+abstract class Animal {
+  void sound();
+
+  void sleep() {
+    print("Sleeping Zzzz............");
+  }
+}
+
+class Dog extends Animal {
+  @override
   void sound() {
-    print("Animal makes sound");
+    print("Dog barks");
   }
 }
 
 class Cat extends Animal {
   @override
   void sound() {
-    super.sound(); // Call parent methood  first
-    print("Cat meows");
+    print("Cat meow");
   }
+}
+
+void abs() {
+  Dog d = Dog();
+  Cat c = Cat();
+
+  d.sound();
+  d.sleep();
+  c.sound();
 }
 
 void main() {
@@ -156,6 +188,7 @@ void main() {
   // interaction();
   // interact();
   // interactionss();
-  Cat c = Cat();
-  c.sound();
+  // Cat c = Cat();
+  // c.sound();
+  abs();
 }
