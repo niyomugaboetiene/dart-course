@@ -32,8 +32,33 @@ void multipleCondition() {
   }
 }
 
+void switchCase() {
+  String day = "Thursday";
+  switch (day) {
+    case "Monday":
+      print("We are on monday");
+      break;
+    case "Tuesday":
+      print("We are on tuesday");
+      break;
+    case "Wednesday":
+      print("We are no wednesday");
+      break;
+    case "Thursday":
+      print("We are not thursday");
+      break;
+    case "Friday":
+      print("We are on friday");
+      break;
+    default:
+      print("In weekend");
+  }
+}
+
 void main() {
   ifStatement();
   ifelseStatement();
   multipleCondition();
+  switchCase();
+
 }
