@@ -229,6 +229,18 @@
 //   Car.displayTotalCars();
 // }
 
+class Cricle {
+  static const double pi = 3.14;
+  double radius;
+
+  Cricle(this.radius);
+
+  double area() {
+    return pi * radius * radius;
+  }
+}
+
+
 void main() {
   // carInfo();
   // CarsInfo();
