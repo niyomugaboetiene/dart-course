@@ -248,7 +248,22 @@ void inter() {
 }
 
 // ^ getter -> is special methood to read(get) the value of private variable
-//  ^ setter -> is special methood to write(set) the value of private variable
+class Student {
+  String _name; // private variable
+
+  Student(this._name);
+
+  // Getter (to read the name)
+  String get name {
+    return _name;
+  }
+}
+
+void inters() {
+  var s1 = Student("Etiene");
+  print(s1._name);
+}
+//  ~ setter -> is special methood to write(set) the value of private variable
 
 void main() {
   // carInfo();
