@@ -151,35 +151,53 @@
 
 // ~ Abstraction  is class that can not be accessed directly
 // * intefaces defice a methood and propoerties that class must implement
-abstract class Animal {
-  void sound();
+// abstract class Animal {
+//   void sound();
 
-  void sleep() {
-    print("Sleeping Zzzz............");
-  }
+//   void sleep() {
+//     print("Sleeping Zzzz............");
+//   }
+// }
+
+// class Dog extends Animal {
+//   @override
+//   void sound() {
+//     print("Dog barks");
+//   }
+// }
+
+// class Cat extends Animal {
+//   @override
+//   void sound() {
+//     print("Cat meow");
+//   }
+// }
+
+// void abs() {
+//   Dog d = Dog();
+//   Cat c = Cat();
+
+//   d.sound();
+//   d.sleep();
+//   c.sound();
+// }
+
+class Animal {
+  void sound() {}
 }
 
-class Dog extends Animal {
+class Dog implements Animal {
   @override
   void sound() {
     print("Dog barks");
   }
 }
 
-class Cat extends Animal {
+class Cat implements Animal {
   @override
   void sound() {
-    print("Cat meow");
+    print("Cat meow")
   }
-}
-
-void abs() {
-  Dog d = Dog();
-  Cat c = Cat();
-
-  d.sound();
-  d.sleep();
-  c.sound();
 }
 
 void main() {
@@ -191,5 +209,5 @@ void main() {
   // interactionss();
   // Cat c = Cat();
   // c.sound();
-  abs();
+  // abs();
 }
