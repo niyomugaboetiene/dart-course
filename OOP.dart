@@ -182,32 +182,36 @@
 //   c.sound();
 // }
 
-class Animal {
-  void sound() {}
+// class Animal {
+//   void sound() {}
+// }
+
+// class Dog implements Animal {
+//   @override
+//   void sound() {
+//     print("Dog barks");
+//   }
+// }
+
+// class Cat implements Animal {
+//   @override
+//   void sound() {
+//     print("Cat meow");
+//   }
+// }
+
+// void ints() {
+//   Dog d = Dog();
+//   d.sound();
+
+//   Cat c = Cat();
+//   c.sound();
+// }
+
+class Car {
+    static int totalCars = 0;
+    String brand
 }
-
-class Dog implements Animal {
-  @override
-  void sound() {
-    print("Dog barks");
-  }
-}
-
-class Cat implements Animal {
-  @override
-  void sound() {
-    print("Cat meow");
-  }
-}
-
-void ints() {
-  Dog d = Dog();
-  d.sound();
-
-  Cat c = Cat();
-  c.sound();
-}
-
 void main() {
   // carInfo();
   // CarsInfo();
