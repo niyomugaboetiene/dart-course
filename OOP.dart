@@ -150,6 +150,7 @@
 // }
 
 // ~ Abstraction  is class that can not be accessed directly
+// * intefaces defice a methood and propoerties that class must implement
 abstract class Animal {
   void sound();
 
