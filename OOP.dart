@@ -217,8 +217,15 @@ class Car {
   }
 
   static void displayTotalCars() {
-    
+    print("Total car is $totalCars");
   }
+}
+
+void interact() {
+  Car c1 = Car("Toyota");
+  Car c2 = Car("BMW");
+
+  Car.displayTotalCars();
 }
 
 void main() {
@@ -231,5 +238,6 @@ void main() {
   // Cat c = Cat();
   // c.sound();
   // abs();
-  ints();
+  // ints();
+  interact();
 }
