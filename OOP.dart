@@ -257,7 +257,7 @@ class Student {
   String get name {
     return _name;
   }
-}
+} 
 
 void inters() {
   var s1 = Student("Etiene");
