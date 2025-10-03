@@ -240,6 +240,12 @@ class Cricle {
   }
 }
 
+void inter() {
+  Cricle c = Cricle(5);
+  print("Area: ${c.area()}");
+
+  print(Cricle.pi);
+}
 
 void main() {
   // carInfo();
@@ -253,4 +259,5 @@ void main() {
   // abs();
   // ints();
   // interact();
+  inter();
 }
