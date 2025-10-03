@@ -247,6 +247,9 @@ void inter() {
   print(Cricle.pi);
 }
 
+// ^ getter -> is special methood to read(get) the value of private variable
+//  ^ setter -> is special methood to write(set) the value of private variable
+
 void main() {
   // carInfo();
   // CarsInfo();
