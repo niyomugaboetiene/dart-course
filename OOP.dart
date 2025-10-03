@@ -209,9 +209,18 @@
 // }
 
 class Car {
-    static int totalCars = 0;
-    String brand
+  static int totalCars = 0;
+  String brand;
+
+  Car(this.brand) {
+    totalCars++;
+  }
+
+  static void displayTotalCars() {
+    
+  }
 }
+
 void main() {
   // carInfo();
   // CarsInfo();
