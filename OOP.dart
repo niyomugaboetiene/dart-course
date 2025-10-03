@@ -208,6 +208,7 @@
 //   c.sound();
 // }
 
+// ? static variable shared to all abojects
 class Car {
   static int totalCars = 0;
   String brand;
