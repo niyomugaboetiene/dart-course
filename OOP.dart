@@ -196,8 +196,16 @@ class Dog implements Animal {
 class Cat implements Animal {
   @override
   void sound() {
-    print("Cat meow")
+    print("Cat meow");
   }
+}
+
+void ints() {
+  Dog d = Dog();
+  d.sound();
+
+  Cat c = Cat();
+  c.sound();
 }
 
 void main() {
@@ -210,4 +218,5 @@ void main() {
   // Cat c = Cat();
   // c.sound();
   // abs();
+  ints();
 }
