@@ -209,25 +209,25 @@
 // }
 
 // ? static variable shared to all abojects
-class Car {
-  static int totalCars = 0;
-  String brand;
+// class Car {
+//   static int totalCars = 0;
+//   String brand;
 
-  Car(this.brand) {
-    totalCars++;
-  }
+//   Car(this.brand) {
+//     totalCars++;
+//   }
 
-  static void displayTotalCars() {
-    print("Total car is $totalCars");
-  }
-}
+//   static void displayTotalCars() {
+//     print("Total car is $totalCars");
+//   }
+// }
 
-void interact() {
-  Car c1 = Car("Toyota");
-  Car c2 = Car("BMW");
+// void interact() {
+//   Car c1 = Car("Toyota");
+//   Car c2 = Car("BMW");
 
-  Car.displayTotalCars();
-}
+//   Car.displayTotalCars();
+// }
 
 void main() {
   // carInfo();
@@ -240,5 +240,5 @@ void main() {
   // c.sound();
   // abs();
   // ints();
-  interact();
+  // interact();
 }
