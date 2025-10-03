@@ -229,23 +229,23 @@
 //   Car.displayTotalCars();
 // }
 
-class Cricle {
-  static const double pi = 3.14;
-  double radius;
+// class Cricle {
+//   static const double pi = 3.14;
+//   double radius;
 
-  Cricle(this.radius);
+//   Cricle(this.radius);
 
-  double area() {
-    return pi * radius * radius;
-  }
-}
+//   double area() {
+//     return pi * radius * radius;
+//   }
+// }
 
-void inter() {
-  Cricle c = Cricle(5);
-  print("Area: ${c.area()}");
+// void inter() {
+//   Cricle c = Cricle(5);
+//   print("Area: ${c.area()}");
 
-  print(Cricle.pi);
-}
+//   print(Cricle.pi);
+// }
 
 // ^ getter -> is special methood to read(get) the value of private variable
 class Student {
@@ -277,5 +277,6 @@ void main() {
   // abs();
   // ints();
   // interact();
-  inter();
+  // inter();
+  inters();
 }
