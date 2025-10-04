@@ -20,12 +20,22 @@ void main() {
   }
 
   // you can also capture by using stack trace means where error happened
-
   try {
     List<int> nums = [1, 3, 4, 5];
     print(nums[7]); // invalid index
   } catch (e, s) {
     print("ERROR: $e"); // error
     print("Stack trace $s");
+  }
+
+  // ! finally -> means run always even an error occured
+
+  try {
+    int result = 10 ~/ 2;
+    print("Result: $result");
+  } catch (e) {
+    print("An error occured: $e");
+  } finally {
+    print("This runs always no matter what");
   }
 }
