@@ -43,5 +43,9 @@ void main() {
     // update Tanzania
     capitals["Tanzania"] = "Dar Es Salama";
     print(capitals["Tanzania"]);
+
+    capitals.forEach((key, value) {
+      print("$key -> $value");
+    });
   }
 }
