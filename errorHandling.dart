@@ -18,5 +18,14 @@ void main() {
   } catch (e) {
     print("Other error: $e");
   }
-}
 
+  // you can also capture by using stack trace means where error happened
+
+  try {
+    List<int> nums = [1, 3, 4, 5];
+    print(nums[7]); // invalid index
+  } catch (e, s) {
+    print("ERROR: $e"); // error
+    print("Stack trace $s");
+  }
+}
