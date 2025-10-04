@@ -32,5 +32,14 @@ void main() {
     };
 
     print(capitals);
+    print(capitals["Rwanda"]);
+
+    // adding new key-value pair
+    capitals["Tanzania"] = "Dodoma";
+    print(capitals["Tanzania"]);
+
+   // remove key and its value
+    capitals.remove("Tanzania");
+    capitals[""]
   }
 }
