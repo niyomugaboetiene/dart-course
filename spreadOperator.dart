@@ -8,6 +8,7 @@ void main() {
   print(combined);
 
   // combine with null values
+  //  we use ? to avoid an error for being displayed
   List<int>? nullList = null;
   List<int> unnull = [4, 5, 6];
   var combine = {...?nullList, ...unnull};
