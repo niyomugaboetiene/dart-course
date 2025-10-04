@@ -17,9 +17,12 @@ void main() {
   // also work with if
 
   var num1 = {1, 2, 3};
+  var extraNumber = true;
 
   var newList = [
     ...num1,
-    // if ()
+    if (extraNumber) ...[4, 5, 6],
   ];
+
+  print(newList);
 }
