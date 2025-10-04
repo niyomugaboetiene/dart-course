@@ -1,4 +1,4 @@
-// * spreat operator ... -> takes one element in array and insert another
+// * spreat operator ... -> takes one element in list, map, sets and insert another
 
 void main() {
   var list1 = [1, 2, 3, 5];
@@ -13,4 +13,13 @@ void main() {
   List<int> unnull = [4, 5, 6];
   var combine = {...?nullList, ...unnull};
   print(combine);
+
+  // also work with if
+
+  var num1 = {1, 2, 3};
+
+  var newList = [
+    ...num1,
+    // if ()
+  ];
 }
