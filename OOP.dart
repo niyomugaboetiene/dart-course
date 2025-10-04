@@ -256,9 +256,9 @@ class Student {
   // Getter (to read the name)
   String get name {
     return _name;
+  }
 
   //  ~ setter -> is special methood to write(set) the value of private variable
-
   set name(String newName) {
     if (newName.isNotEmpty) {
       _name = newName;
@@ -266,12 +266,16 @@ class Student {
       print("Name can not be empty");
     }
   }
-  }
-} 
+}
 
 void inters() {
   var s1 = Student("Etiene");
   print(s1._name);
+
+  s1.name = "niyomugabo";
+  print(s1.name);
+
+  s1.name = "";
 }
 
 void main() {
