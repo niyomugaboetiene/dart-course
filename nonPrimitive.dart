@@ -38,8 +38,10 @@ void main() {
     capitals["Tanzania"] = "Dodoma";
     print(capitals["Tanzania"]);
 
-   // remove key and its value
+    // remove key and its value
     capitals.remove("Tanzania");
-    capitals[""]
+    // update Tanzania
+    capitals["Tanzania"] = "Dar Es Salama";
+    print(capitals["Tanzania"]);
   }
 }
