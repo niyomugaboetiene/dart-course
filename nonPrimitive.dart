@@ -13,7 +13,7 @@ void main() {
   for (var fruit in fruits) {
     print(fruit);
 
-// ~ set -> ordered collection of unique items
+    // ~ set -> ordered collection of unique items
     Set<int> numbers = {1, 2, 3, 4, 5, 2}; // ? duplicate removed here
     print(numbers);
 
@@ -23,5 +23,14 @@ void main() {
     // * checking membership
     print(numbers.contains(1)); // True
     print(numbers.contains(10)); // false
+
+    // & maps -> this datatype store key value pair
+    Map<String, String> capitals = {
+      "Rwanda": "Kigali",
+      "Tanzania": "Nairobi",
+      "Burundi": "Gitega",
+    };
+
+    print(capitals);
   }
 }
