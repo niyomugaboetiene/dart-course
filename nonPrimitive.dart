@@ -13,6 +13,7 @@ void main() {
   for (var fruit in fruits) {
     print(fruit);
 
+// ~ set -> ordered collection of unique items
     Set<int> numbers = {1, 2, 3, 4, 5, 2}; // ? duplicate removed here
     print(numbers);
 
