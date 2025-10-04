@@ -6,4 +6,10 @@ void main() {
 
   var combined = {...list1, ...list2};
   print(combined);
+
+  // combine with null values
+  List<int>? nullList = null;
+  List<int> unnull = [4, 5, 6];
+  var combine = {...?nullList, ...unnull};
+  print(combine);
 }
