@@ -12,5 +12,15 @@ void main() {
 
   for (var fruit in fruits) {
     print(fruit);
+
+    Set<int> numbers = {1, 2, 3, 4, 5, 2}; // ? duplicate removed here
+    print(numbers);
+
+    numbers.add(4);
+    print(numbers);
+
+    // * checking membership
+    print(numbers.contains(1)); // True
+    print(numbers.contains(10)); // false
   }
 }
