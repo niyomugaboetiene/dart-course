@@ -1,4 +1,13 @@
 // * Exeception is an error happen when a program is running
+// ~ you can create your own error by using throw Exception
+void checkAge(int age) {
+  if (age < 18) {
+    throw Exception("Age must be greater than 18");
+  } else {
+    print("Access granted");
+  }
+}
+
 //  basic of try and catch
 void main() {
   try {
@@ -37,5 +46,11 @@ void main() {
     print("An error occured: $e");
   } finally {
     print("This runs always no matter what");
+  }
+
+  try {
+    checkAge(15);
+  } catch (e) {
+    print("ERROR: $e");
   }
 }
