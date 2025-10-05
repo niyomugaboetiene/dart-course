@@ -6,6 +6,12 @@ extension StringExtension on String {
   }
 }
 
+extension intExtension on String {
+  bool isEven(int num) {
+    return  num / 2;
+  }
+}
+
 void main() {
   String email = "etiene3008@gmail.com";
 
