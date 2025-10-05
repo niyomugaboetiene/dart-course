@@ -5,3 +5,4 @@ typedef intOperation = int Function(int a, int b);
 
 int add(int x, int y) => x + y;
 int multply(int x, int y) => x * y;
+
