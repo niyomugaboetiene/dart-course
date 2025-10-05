@@ -6,14 +6,13 @@ extension StringExtension on String {
   }
 }
 
-extension intExtension on String {
-  bool isEven(int num) {
-    return  num / 2;
-  }
+extension intExtension on int {
+  bool isEven() => this % 2 == 0;
 }
 
 void main() {
   String email = "etiene3008@gmail.com";
+  print(4.isEven);
 
   print(email.isValidEmail());
 }
