@@ -10,7 +10,7 @@
 // }
 
 // void carInfo() {
-//   // create object
+  // create object
 //   Car myCar = Car();
 
 //   print(myCar.brand); // access properties
@@ -43,7 +43,7 @@
 //   String brand;
 //   int speed;
 
-//   // constructor
+ // constructor
 //   Car(this.brand, this.speed);
 
 //   void showDetails() {
