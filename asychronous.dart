@@ -3,5 +3,17 @@
 // ^ future represent value that will be available in future
 
 Future<String> fetchData() {
-    return 
+  return Future.delayed(Duration(seconds: 2), () {
+    return "Data fetched from the server";
+  });
+}
+
+void main() {
+  print("Start");
+
+  fetchData().then((data) {
+    print(data);
+  });
+
+  print("End");
 }
