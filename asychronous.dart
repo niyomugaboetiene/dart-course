@@ -31,7 +31,10 @@ Future<String> ErrorHandling() {
 }
 
 void interact() async {
-    
+  print("Start");
+  String data = await ErrorHandling();
+  print(data);
+  print("End");
 }
 
 void main() {
