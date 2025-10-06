@@ -13,5 +13,16 @@ void stream() {
 void main() {
   final controller = StreamController<String>();
 
-  controller.stream.listen((data) => print("Received"));
+  controller.stream.listen(
+    (data) => print("Received"),
+    onError: (err) => print("ERROR: $err"),
+    onDone: () => print("Stream closed"),
+  );
+
+  // Add value to the stream
+  controller.sink.add("Hello");
+  controller.sink.add("World");
+  controller.sink.addError("Some thing went wrong");
+  controller.sink.add("This will not be received");
+  controller.close();
 }
