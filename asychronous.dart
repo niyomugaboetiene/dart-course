@@ -38,7 +38,7 @@ void interact() async {
     print("End");
   } catch (e) {
     print("ERROR: $e");
-  } final {
+  } finally {
     print("Executed successfully");
   }
 }
