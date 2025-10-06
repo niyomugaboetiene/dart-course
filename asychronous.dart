@@ -31,15 +31,18 @@ Future<String> ErrorHandling() {
 }
 
 void interact() async {
-  print("Start");
-  String data = await ErrorHandling();
-  print(data);
-  print("End");
+  try {
+       print("Start");
+       String data = await ErrorHandling();
+       print(data);
+      print("End");  
+  }
+  
 }
 
 void main() {
   print("Start");
-
+  
   fetchData().then((data) {
     print(data);
   });
@@ -47,4 +50,5 @@ void main() {
   print("End");
 
   interaction();
+  ErrorHandling();
 }
