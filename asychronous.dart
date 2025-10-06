@@ -17,3 +17,9 @@ void main() {
 
   print("End");
 }
+
+Future <String> FetchData() {
+    return Future.delayed(Duration(seconds: 2), () {
+        return "Data fetched from the server";
+    });
+}
