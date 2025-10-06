@@ -15,7 +15,7 @@ Future<String> FetchData() {
 }
 
 void interaction() {
-  print("tart");
+  print("Start");
 
   FetchData().then((data) {
     print(data);
