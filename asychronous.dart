@@ -32,17 +32,20 @@ Future<String> ErrorHandling() {
 
 void interact() async {
   try {
-       print("Start");
-       String data = await ErrorHandling();
-       print(data);
-      print("End");  
+    print("Start");
+    String data = await ErrorHandling();
+    print(data);
+    print("End");
+  } catch (e) {
+    print("ERROR: $e");
+  } final {
+    print("Executed successfully");
   }
-  
 }
 
 void main() {
   print("Start");
-  
+
   fetchData().then((data) {
     print(data);
   });
