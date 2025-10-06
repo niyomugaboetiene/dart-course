@@ -14,6 +14,7 @@ Future<String> FetchData() {
   });
 }
 
+// ? with async and await
 void interaction() async {
   print("Start");
 
@@ -21,6 +22,16 @@ void interaction() async {
   print(data);
 
   print("End");
+}
+
+// * Error handling by using future
+Future<String> ErrorHandling() {
+  return Future.delayed(Duration(seconds: 2));
+  throw Exception("Server Error");
+}
+
+void interact() async {
+    
 }
 
 void main() {
