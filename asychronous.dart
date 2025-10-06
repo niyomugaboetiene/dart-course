@@ -8,6 +8,22 @@ Future<String> fetchData() {
   });
 }
 
+Future<String> FetchData() {
+  return Future.delayed(Duration(seconds: 2), () {
+    return "Data fetched from the server";
+  });
+}
+
+void interaction() {
+  print("Dtart");
+
+  FetchData().then((data) {
+    print(data);
+  });
+
+  print("End");
+}
+
 void main() {
   print("Start");
 
@@ -16,10 +32,6 @@ void main() {
   });
 
   print("End");
-}
 
-Future <String> FetchData() {
-    return Future.delayed(Duration(seconds: 2), () {
-        return "Data fetched from the server";
-    });
+  interaction();
 }
