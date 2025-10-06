@@ -14,12 +14,11 @@ Future<String> FetchData() {
   });
 }
 
-void interaction() {
+void interaction() async {
   print("Start");
 
-  FetchData().then((data) {
-    print(data);
-  });
+  String data = await FetchData();
+  print(data);
 
   print("End");
 }
